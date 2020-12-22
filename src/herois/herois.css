@@ -1,0 +1,53 @@
+@font-face {
+  src: local("Marvel"), url("../fonts/marvel.bold.ttf");
+}
+
+Modal {
+  background-color: var(--color-backgroung);
+}
+
+#nameHero {
+  color: #ffff;
+  font-size: 30px;
+  font-family: "Marvel";
+  border: none;
+}
+
+#close {
+  background-color: var(--color-backgroung);
+  border: none;
+  margin-left: 98%;
+}
+
+.personagem {
+  border-block-color: white;
+}
+
+.personagem img {
+  width: 25em;
+  object-fit: fill;
+}
+
+#info {
+  font-size: 2.4rem;
+  margin-bottom: 0px;
+  color: var(--color-title);
+}
+
+@media only screen and (max-width: 787px) {
+  .personagem img {
+    width: 90%;
+  }
+
+  #close {
+    background-color: var(--color-backgroung);
+    border: none;
+    margin-left: 90%;
+  }
+
+  Modal {
+    width: 780px;
+    left: 0px;
+    right: 0px;
+  }
+}

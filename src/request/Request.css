@@ -1,0 +1,131 @@
+hr {
+  background-color: rgb(253, 0, 0);
+}
+
+.letter {
+  text-transform: uppercase;
+  color: var(--color-title);
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  padding: 10px;
+}
+
+.letter:hover {
+  color: red;
+  text-shadow: 1px 1px #f07979;
+}
+
+#herois {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.found {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#form input {
+  width: 30rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  border: 1px solid #e0dddd;
+}
+
+#form input::placeholder {
+  font-style: italic;
+  color: #8e8e8e;
+}
+
+#form input:focus,
+#form input:focus-within,
+#search:focus,
+#search:focus-within {
+  outline: none;
+}
+
+#search {
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  padding: 1rem 1.8rem;
+  color: #ec7601;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#search:hover {
+  color: red;
+  background-color: var(--color-backgroung);
+}
+
+#notFoudHero {
+  width: 100%;
+  height: 45em;
+}
+
+#notFoudHero h1 {
+  color: #fff;
+  top: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #ee4b4b;
+}
+
+.load {
+  width: 100%;
+}
+
+.load Loading {
+  margin: o auto;
+}
+
+@media only screen and (min-width: 1217px) and (max-width: 1616px) {
+  #herois {
+    grid-template-columns: auto auto auto;
+  }
+  #form {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 1316px) {
+  #herois {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  #herois {
+    margin: 0 auto;
+    grid-template-columns: auto;
+  }
+  .personagem img {
+    width: 90%;
+  }
+  #form {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 0;
+  }
+  #form input {
+    font-size: 15px;
+  }
+  #form button {
+    font-size: 15px;
+  }
+}
